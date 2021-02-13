@@ -5,11 +5,15 @@ public class Main {
 
         int x = 200000;
         int y = 220000;
-        for (int i = 1; i < 10002; i++) {
-            System.out.println(x);
-            x++;
-            System.out.println(y);
-            y++;
+        for (int i = 0; i < 30000; i++) {
+            if (i < 10001) {
+                System.out.println(x);
+                x++;
+            }
+            if (i > 19998) {
+                System.out.println(y);
+                y++;
+            }
         }
 
 //        for (int n = 220000; n < 235001; n++) {
