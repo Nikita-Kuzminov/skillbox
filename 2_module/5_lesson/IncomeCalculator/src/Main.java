@@ -44,7 +44,11 @@ public class Main {
             if (pureIncome < 0) {
                 System.out.println("Бюджет в минусе! Нужно срочно зарабатывать!");
             }
+
+            findMinSumInvest(false);
+
         }
+
     }
 
     private static boolean checkIncomeRange(int income) {
@@ -66,4 +70,19 @@ public class Main {
             assistantSalary +
             financeManagerSalary;
     }
+
+    //Функция ддя нахождения минимальной суммы доходности для инвестирования
+
+    private static boolean findMinSumInvest(boolean findSum) {
+        for (int i = 400000; i < 650000; i++) {
+            if (i == minInvestmentsAmount) {
+                findSum = true;
+                System.out.println("Найдена минимальная сумма инвестиций, она равна " + i);
+                break;
+            }
+        }
+        return findSum;
+    }
+
+    // Конец функции
 }

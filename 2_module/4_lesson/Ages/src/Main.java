@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int vasyaAge = 45;
-        int katyaAge = 32;
-        int mishaAge = 25;
+        int vasyaAge = 2147483650;
+        int katyaAge = 2147483651;
+        int mishaAge = 2147483652;
 
         int min = -1;
         int middle = -1;

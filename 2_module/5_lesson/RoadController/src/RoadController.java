@@ -58,7 +58,7 @@ public class RoadController {
             }
             //Легковой автомобиль
             else {
-                price = cargoCarPrice;
+                price = passengerCarPrice;
             }
         } else {
             price = passengerCarPrice;
