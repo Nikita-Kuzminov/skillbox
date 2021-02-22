@@ -45,7 +45,9 @@ public class Main {
                 System.out.println("Бюджет в минусе! Нужно срочно зарабатывать!");
             }
 
-            findMinSumInvest(false);
+            // Проверил, что программа доходит до этого места и функция выполняется
+            System.out.println("Something");
+            findMinSumInvest(pureIncomeAfterTax, minInvestmentsAmount);
 
         }
 
@@ -73,9 +75,10 @@ public class Main {
 
     //Функция ддя нахождения минимальной суммы доходности для инвестирования
 
-    private static boolean findMinSumInvest(boolean findSum) {
+    private static boolean findMinSumInvest(double checkPureIncome, double checkMinInvestments) {
+        boolean findSum = false;
         for (int i = 400000; i < 650000; i++) {
-            if (i == minInvestmentsAmount) {
+            if (i >= checkMinInvestments) {
                 findSum = true;
                 System.out.println("Найдена минимальная сумма инвестиций, она равна " + i);
                 break;
